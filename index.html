@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Janani | AI & Python Develeloper</title>
+</head>
+
+<body id="body" style="margin:0;font-family:Arial, sans-serif;transition:0.4s;scroll-behavior:smooth;">
+
+<!-- NAVBAR -->
+<div style="background:#111;padding:15px;position:fixed;width:100%;top:0;z-index:1000;text-align:center;">
+    <a href="#about" style="color:white;margin:15px;text-decoration:none;">About</a>
+    <a href="#skills" style="color:white;margin:15px;text-decoration:none;">Skills</a>
+    <a href="#projects" style="color:white;margin:15px;text-decoration:none;">Projects</a>
+    <a href="#contact" style="color:white;margin:15px;text-decoration:none;">Contact</a>
+    
+</div>
+
+<!-- HERO SECTION -->
+<div style="padding-top:120px;background:linear-gradient(to right,#1e3a8a,#2563eb);color:white;text-align:center;padding-bottom:70px;">
+    <img src="Profile.jpeg" style="width:160px;height:160px;border-radius:50%;border:5px solid white;object-fit:cover;">
+    <h1 style="margin-top:20px;">Hi, I'm Janani 👋</h1>
+    <h3 id="typing"></h3>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="reveal" style="padding:70px 20px;text-align:center;">
+    <h2 style="color:#1e3a8a;">About Me</h2>
+    <p style="max-width:700px;margin:auto;">
+        I am a motivated Computer Science student with a strong interest in Python development and Artificial Intelligence. I am currently building my expertise in full-stack web development and AI-based applications.
+
+I enjoy working on real-world projects such as AI chatbots, PDF-based question answering systems, and machine learning models. My goal is to become a skilled Python Full Stack Developer and contribute to innovative technology solutions.
+
+I am continuously learning, exploring new technologies, and improving my problem-solving skills.
+    </p>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="reveal" style="background:#f4f6f9;padding:80px 20px;text-align:center;">
+    
+    <h2 style="color:#1e3a8a;margin-bottom:50px;">Technical Skills</h2>
+
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px;max-width:1000px;margin:auto;">
+
+        <!-- Skill Card -->
+        <div style="background:white;width:220px;padding:25px;border-radius:15px;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+                    transition:0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+            
+            <h3>Python</h3>
+            <p style="font-size:30px;color:#2563eb;margin:10px 0;">90%</p>
+            <div style="background:#ddd;height:8px;border-radius:10px;">
+                <div style="width:90%;height:8px;background:#2563eb;border-radius:10px;"></div>
+            </div>
+        </div>
+
+        <div style="background:white;width:220px;padding:25px;border-radius:15px;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+                    transition:0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+            
+            <h3>Flask</h3>
+            <p style="font-size:30px;color:#2563eb;margin:10px 0;">85%</p>
+            <div style="background:#ddd;height:8px;border-radius:10px;">
+                <div style="width:85%;height:8px;background:#2563eb;border-radius:10px;"></div>
+            </div>
+        </div>
+
+        <div style="background:white;width:220px;padding:25px;border-radius:15px;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+                    transition:0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+            
+            <h3>Machine Learning</h3>
+            <p style="font-size:30px;color:#2563eb;margin:10px 0;">80%</p>
+            <div style="background:#ddd;height:8px;border-radius:10px;">
+                <div style="width:80%;height:8px;background:#2563eb;border-radius:10px;"></div>
+            </div>
+        </div>
+
+        <div style="background:white;width:220px;padding:25px;border-radius:15px;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+                    transition:0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+            
+            <h3>HTML & CSS</h3>
+            <p style="font-size:30px;color:#2563eb;margin:10px 0;">85%</p>
+            <div style="background:#ddd;height:8px;border-radius:10px;">
+                <div style="width:85%;height:8px;background:#2563eb;border-radius:10px;"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- PROJECTS -->
+<div id="projects" class="reveal" style="padding:70px 20px;text-align:center;">
+    <h2 style="color:#1e3a8a;">Projects</h2>
+
+    <button onclick="filterProjects('all')" style="margin:10px;padding:8px 15px;">All</button>
+    <button onclick="filterProjects('ai')" style="margin:10px;padding:8px 15px;">AI</button>
+    <button onclick="filterProjects('web')" style="margin:10px;padding:8px 15px;">Web</button>
+
+    <div id="projectContainer">
+
+        <div class="project ai" style="background:white;margin:20px auto;padding:25px;width:70%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+            <h3>AI Chat with PDF</h3>
+            <p>Flask-based chatbot that answers questions from uploaded PDFs with voice support.</p>
+        </div>
+
+        <div class="project ai" style="background:white;margin:20px auto;padding:25px;width:70%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+            <h3>Energy Consumption Prediction</h3>
+            <p>Machine Learning model for sustainability forecasting.</p>
+        </div>
+
+        <div class="project web" style="background:white;margin:20px auto;padding:25px;width:70%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+            <h3>Personal Portfolio Website</h3>
+            <p>Responsive interactive portfolio using HTML, CSS & JS.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" style="background:#1e3a8a;color:white;padding:60px;text-align:center;">
+    <h2>Contact Me</h2>
+    <p>Email: jananimj1227@gmail.com</p>
+    <p>GitHub: JananiMaran12</p>
+    <p>LinkedIn: Janani J</p>
+    <a href="c:\Users\manim\Downloads\Janani_Resume.pdf" download
+   style="display:inline-block;
+          padding:12px 25px;
+          background-color:#1e3a8a;
+          color:white;
+          text-decoration:none;
+          border-radius:6px;
+          font-weight:bold;
+          margin-top:15px;">
+   📄 Download Resume
+</a>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+
+// Typing Effect
+const text = "Python Full Stack Developer | Web Developer";
+let i = 0;
+function typing() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 70);
+    }
+}
+typing();
+
+// Dark Mode
+function toggleMode() {
+    const body = document.getElementById("body");
+    if (body.style.backgroundColor === "black") {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+    } else {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+    }
+}
+
+// Skill Animation
+window.addEventListener("scroll", function() {
+    document.querySelectorAll(".bar").forEach(bar => {
+        if (bar.style.width === "0px" || bar.style.width === "") {
+            bar.style.width = bar.getAttribute("data-width");
+        }
+    });
+});
+
+// Project Filter
+function filterProjects(type) {
+    const projects = document.querySelectorAll(".project");
+    projects.forEach(p => {
+        if (type === "all" || p.classList.contains(type)) {
+            p.style.display = "block";
+        } else {
+            p.style.display = "none";
+        }
+    });
+}
+
+// Scroll Reveal
+window.addEventListener("scroll", function() {
+    document.querySelectorAll(".reveal").forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const screen = window.innerHeight;
+        if (position < screen - 100) {
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+        } else {
+            el.style.opacity = 0;
+            el.style.transform = "translateY(40px)";
+        }
+        el.style.transition = "0.6s";
+    });
+});
+
+</script>
+
+</body>
+</html>
